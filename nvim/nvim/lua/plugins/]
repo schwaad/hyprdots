@@ -1,9 +1,0 @@
-return {
-  { "slugbyte/lackluster" },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "lackluster",
-    },
-  },
-}
