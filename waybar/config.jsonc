@@ -1,6 +1,6 @@
 {
   "layer": "top",
-  "width": 1500,
+  "width": 1200,
   "margin": 5,
   "modules-left": [
     "custom/distro",
@@ -12,10 +12,13 @@
   "modules-right": [
     "clock",
     "pulseaudio",
+    "backlight",
     "memory",
     "cpu",
     "battery",
+    "division",
     "custom/reboot",
+    "custom/suspend",
     "custom/shutdown"
   ],
   "hyprland/workspaces": {
@@ -43,21 +46,30 @@
     "tooltip": false,
   },
   "pulseaudio": {
-    "format": "  {volume}%",
+    "format-alt": "  {volume}%",
+    "format": " ",
+    "tooltip": false,
+  },
+  "backlight": {
+    "format-alt": "  {percent}%",
+    "format": " ",
     "tooltip": false,
   },
   "clock": {
     "format": "󰥔  {:%R}",
-    "format-alt": "󰥔 {:%A, %B %dth, %Y}"
+    "format-alt": "󰥔 {:%A, %B %dth, %Y}",
+    "tootltip": false
   },
   "cpu": {
     "interval": 5,
-    "format": "  {usage}%",
+    "format-alt": "  {usage}%",
+    "format": " ",
     "tooltip": false,
   },
   "memory": {
     "interval": 5,
-    "format": "  {}%",
+    "format-alt": "  {}%",
+    "format": " ",
     "tooltip": false,
   },
   "custom/distro": {
@@ -65,14 +77,19 @@
     "tooltip": false,
   },
   "custom/reboot": {
-    "format": "",
+    "format": "  ",
     "on-click": "reboot",
     "tooltip": false,
   },
   "custom/shutdown": {
-    "format": "⏻",
+    "format": " ⏻ ",
     "on-click": "shutdown now",
     "tooltip": false,
+  },
+  "custom/suspend": {
+    "format": " 󰤄 ",
+    "on-click": "systemctl suspend",
+    "tooltip": false
   },
   "battery": {
     "states": {
@@ -83,5 +100,5 @@
     "format-charging": "󰂄 {capacity}%",
     "format-plugged": "󰂄 {capacity}%",
     "format-full": "󰁹 {capacity}%",
-  },
+  }
 }

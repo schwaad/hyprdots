@@ -1,4 +1,3 @@
-
 *, #workspaces button {
     margin-left: 2px;
     margin-right: 2px;
@@ -26,11 +25,16 @@ window {
 }
 
 
-#pulseaudio, #clock,#battery, #memory, #cpu,#tray, #custom-distro, #workspaces, #network {
+#pulseaudio, #custom-suspend, #backlight, #clock,#battery, #memory, #cpu,#tray, #custom-distro, #workspaces, #network {
     color: #ffffff;
     background: #101010;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+#tray menu{
+  background: #101010;
+  color: #ffffff;
 }
 
 #custom-reboot,#custom-shutdown{
@@ -46,7 +50,7 @@ window {
   padding-left: 5px;
 }
 
-#pulseaudio:hover, #battery:hover,#clock:hover, #memory:hover, #cpu:hover, #custom-reboot:hover, #custom-shutdown:hover, #custom-distro:hover, #network:hover{
+#pulseaudio:hover, #custom-suspend:hover, #backlight:hover,#battery:hover,#clock:hover, #memory:hover, #cpu:hover, #custom-reboot:hover, #custom-shutdown:hover, #custom-distro:hover, #network:hover{
     color: #000000;
     background: #ffffff;
 }
