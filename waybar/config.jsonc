@@ -46,8 +46,8 @@
     "tooltip": false,
   },
   "pulseaudio": {
-    "format-alt": "  {volume}%",
-    "format": " ",
+    "format": "  {volume}%",
+    "format-muted": "󰝟 {volume}%",
     "tooltip": false,
   },
   "backlight": {
