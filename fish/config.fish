@@ -2,7 +2,7 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
     eval (ssh-agent -c)
     ~/Scripts/autosshpass.sh
-    source ~/.config/fish/functions/marcopolo.fish
+    export PSQL_PASS=jiHMF=51151205
     clear
     alias reloadwaybar='killall waybar && nohup waybar & && rm nohup.out'
     alias open-mysqlWorkbench='nohup mysql-workbench & && rm nohup.out'
