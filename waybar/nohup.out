@@ -1,0 +1,7 @@
+[2025-01-31 21:45:48.274] [info] Using configuration file /home/schwaad/.config/waybar/config.jsonc
+[2025-01-31 21:45:48.278] [info] Discovered appearance 'dark'
+[2025-01-31 21:45:48.278] [info] Using CSS file /home/schwaad/.config/waybar/style.css
+[2025-01-31 21:45:48.289] [info] Hyprland IPC starting
+[2025-01-31 21:45:48.290] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-01-31 21:45:48.291] [warning] module cava: Unknown module: cava
+[2025-01-31 21:45:48.446] [info] Bar configured (width: 1600, height: 45) for output: eDP-1
