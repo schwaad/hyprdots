@@ -137,8 +137,9 @@
   "custom/power": {
     "format": "⏻ ",
     "tooltip": false,
-    "on-click": "bash ~/.config/rofi/powermenu.sh",
-    "on-click-right": "killall rofi",
+    "on-click": "shutdown now",
+    "on-click-middle": "systemctl suspend",
+    "on-click-right": "reboot"
   },
   "clock": {
     "format": "  {:%A - %B %d, %Y - %R}",

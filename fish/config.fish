@@ -2,8 +2,8 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
     eval (ssh-agent -c)
     ~/Scripts/autosshpass.sh
-    export PSQL_PASS=jiHMF=51151205
     clear
+    export PSQL_PASS=$(cat ~/Área\ de\ trabalho/Anotações/jeremias.txt)
     alias reloadwaybar='killall waybar && nohup waybar & && rm nohup.out'
     alias open-mysqlWorkbench='nohup mysql-workbench & && rm nohup.out'
     alias android-studio='nohup studio & && rm nohup.out'
