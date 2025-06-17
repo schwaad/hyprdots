@@ -18,7 +18,9 @@
     "backlight",
     "pulseaudio",
     "battery",
-    "custom/power"
+    "custom/suspend",
+    "custom/reboot",
+    "custom/power",
   ],
   "pulseaudio": {
     "tooltip": false,
@@ -137,9 +139,17 @@
   "custom/power": {
     "format": "⏻ ",
     "tooltip": false,
-    "on-click": "shutdown now",
-    "on-click-middle": "systemctl suspend",
-    "on-click-right": "reboot"
+    "on-click": "shutdown now"
+  },
+  "custom/reboot": {
+    "format": " ",
+    "tooltip": false,
+    "on-click": "reboot -h"
+  },
+  "custom/suspend": {
+    "format": "󰤄 ",
+    "tooltip": false,
+    "on-click": "systemctl suspend"
   },
   "clock": {
     "format": "  {:%A - %B %d, %Y - %R}",
